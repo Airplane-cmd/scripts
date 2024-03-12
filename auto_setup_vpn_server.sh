@@ -41,7 +41,7 @@ server {
         listen [::]:3000 default_server;
         server_name _;
         location / {
-                auth_basic \"Administrator’s Area\";
+                auth_basic "Administrator’s Area";
                 auth_basic_user_file /etc/apache2/.htpasswd;
                 proxy_pass http://127.0.0.1:3001;
         }
