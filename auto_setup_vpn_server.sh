@@ -1,4 +1,3 @@
-ssh root@$1 "
 export DEBIAN_FRONTEND=noninteractive
 export NEEDRESTART_MODE=a
 mkdir /app
@@ -52,4 +51,4 @@ EOT
 echo 'max:\$apr1\$wjvu9G/v\$dhKBEshHfmXToSthTSb5B/' > /etc/apache2/.htpasswd
 
 systemctl restart nginx
-"
+
