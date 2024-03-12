@@ -44,7 +44,6 @@ server {
                 auth_basic "Administrator’s Area";
                 auth_basic_user_file /etc/apache2/.htpasswd;
                 proxy_pass http://127.0.0.1:3001;
-		proxy_set_header Authorization "Basic bWF4Ok5pY2tlbHBlbjYyMg==";
         }
 }
 EOT
