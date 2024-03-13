@@ -17,7 +17,8 @@ npm install fastify fastify-static chalk ini
 cd ./scripts/bash
 chmod 777 installer.sh
 
-vps_ip=$(echo "$1" | sed 's/.*vps_ip=//')
+vps_ip=$(curl -s ifconfig.co)
+
 
 sed -i "s/_SERVER_LISTEN=45.34.95.454/_SERVER_LISTEN=$vps_ip/" ../data/wg.def
 sed -i 's/_SERVER_PUBLIC_KEY=/_SERVER_PUBLIC_KEY=3yAk0QLFfLPzr5dj87w4xyrjtEAqIw+eVtlpGDW68nE=/' ../data/wg.def
