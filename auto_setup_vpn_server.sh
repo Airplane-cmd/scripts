@@ -48,7 +48,7 @@ server {
 }
 EOT
 
-echo 'max:\$apr1\$wjvu9G/v\$dhKBEshHfmXToSthTSb5B/' > /etc/apache2/.htpasswd
+echo 'yourvpn:$apr1$6bgt059p$n.4jBizskUbkI1g1vD8Ms.' > /etc/apache2/.htpasswd
 
 systemctl restart nginx
 
